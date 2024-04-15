@@ -10,15 +10,15 @@ def question1():
 
     # type: float
     # Calculate the probability.
-    answers['(a)'] = None
+    answers['(a)'] = 0.0288
 
     # type: float
     # Calculate the probability.
-    answers['(b)'] = None
+    answers['(b)'] = 0.002
 
     # type: float
     # Calculate the probability.
-    answers['(c)'] = None
+    answers['(c)'] = 0.064
     return answers
 
 
@@ -27,38 +27,38 @@ def question2():
     answers = {}
 
     # type: bool
-    answers['(a) A'] = None
+    answers['(a) A'] = True  # Boosting reduces bias by focusing more on instances previous models misclassified.
 
     # type: bool
-    answers['(a) B'] = None
+    answers['(a) B'] = False # Boosting does not employ parallel model training.
 
     # type: bool
-    answers['(a) C'] = None
+    answers['(a) C'] = False # Boosting does not increase model diversity by training each model on a random subset.
 
     # type: bool
-    answers['(a) D'] = None
+    answers['(a) D'] = True  # Boosting assigns weights to each training instance, adjusting these weights after each round.
 
     # type: bool
-    answers['(b) A'] = None
+    answers['(b) A'] = True  # Boosting can increase the model's variance due to the high weight it may place on outliers.
 
     # type: False
-    answers['(b) B'] = None
+    answers['(b) B'] = False # Boosting does not lead to underfitting, it places too much emphasis on instances that are hard to classify.
 
     # type: bool
-    answers['(b) C'] = None
+    answers['(b) C'] = True  # The sequential nature of boosting can lead to increased training times compared to bagging.
 
     # type: bool
-    answers['(b) D'] = None
+    answers['(b) D'] = True  # Boosting's focus on reducing bias makes it less susceptible to overfitting compared to other ensemble methods.
 
     # type: eval_float
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = None
+    answers['(c) Weight update'] = 0.424  # The weight update factor alpha calculated from an error rate of 0.3.
 
     # type: float
     # the answer should be correct to 3 significant digits
-    answers['(d) Weight influence'] = None
+    answers['(d) Weight influence'] = 1.528  # The new weight for an instance misclassified in the previous round.
     return answers
 
 
@@ -67,10 +67,10 @@ def question3():
     answers = {}
 
     # type: string
-    answers['Agree?'] = None
+    answers['Agree?'] = 'No'
 
     # type: explain_string
-    answers['Explain'] = None
+    answers['Explain'] =  'flipping a coin is purely random and does not use any real data to make predictions, Ensemble methods require classifiers that have some level of accuracy independently random guesses do not provide that'
     return answers
 
 
@@ -79,13 +79,13 @@ def question4():
     answers = {}
 
     # type: bool
-    answers['(a) e=0.5, independent'] = None
+    answers['(a) e=0.5, independent'] = False
 
     # type: bool
-    answers['(b), independent'] = None
+    answers['(b), independent'] = True
 
     # type: bool
-    answers['(c) identical'] = None
+    answers['(c) identical'] = False
     return answers
 
 
