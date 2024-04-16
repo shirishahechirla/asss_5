@@ -54,11 +54,11 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = 0.424 
+    answers['(c) Weight update'] = '0.5*math.log((1-p)/p)'
 
     # type: float
     # the answer should be correct to 3 significant digits
-    answers['(d) Weight influence'] = 1.528  
+    answers['(d) Weight influence'] = 1.528
     return answers
 
 
@@ -137,10 +137,10 @@ def question6():
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
-    answers['(c) Which metric?'] = 'precision/recall'
+    answers['(c) Which metric?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) explain'] = "Precision and recall are better metrics in this scenario. C2 has a higher recall than C1 better at finding all positive samplewhile precision remains the same identical proportion of true positives among all positive predictions."
+    answers['(c) explain'] = "Classifier C2 is preferred when looking at precision and recall due to its greater recall, yet this view overlooks the rate of false positives. Considering both the true positive rate and the false positive rate provides a more balanced evaluation, revealing C2's increased recall alongside the likelihood of increased false positives. Such metrics offer a more suitable comparison of performance, especially in contexts where false positives are significant."
     return answers
 
 
@@ -184,12 +184,11 @@ def question8():
     answers['(a) recall for C0'] = "p"
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = "2 * (0.1 * p) / (0.1 + p)" or "2 * p / (1 + 10p)"
-
+    answers['(b) F-measure of C0'] = "(2 * p/10)/(p + 1/10)"
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
-    answers['C1 better than random?'] = "unknown"
+    answers['C1 better than random?'] = "no"
 
 
     # type: float
