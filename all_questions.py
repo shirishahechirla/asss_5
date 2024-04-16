@@ -18,7 +18,7 @@ def question1():
 
     # type: float
     # Calculate the probability.
-    answers['(c)'] = 0.08
+    answers['(c)'] = 0.008
     return answers
 
 
@@ -54,7 +54,7 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = 0.424 
+    answers['(c) Weight update'] = '0.5*math.log((1-p)/p)' 
 
     # type: float
     # the answer should be correct to 3 significant digits
@@ -119,13 +119,13 @@ def question6():
     answers['(a) C1-TPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-TPR'] = "2p"
+    answers['(a) C2-TPR'] = "2*p"
 
     # type: eval_float
     answers['(a) C1-FPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-FPR'] = "2p"
+    answers['(a) C2-FPR'] = "2*p"
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
@@ -177,7 +177,7 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = 0.1
+    answers['(a) precision for C0'] = 1/10
 
 
     # type: eval_float
