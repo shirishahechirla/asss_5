@@ -177,7 +177,7 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = 1/10
+    answers['(a) precision for C0'] = '1/10'
 
 
     # type: eval_float
